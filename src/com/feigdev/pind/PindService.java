@@ -29,7 +29,8 @@ public class PindService extends Service implements WebComListener{
 	private static final int POST_REPIN = 20128;
 	private static final int GET_BOARDS = 20129;
 	private static final int POST_PIN = 20130;
-	private static final int CHECKIN = 20131;
+	private static final String CLIENT_ID = "";
+	private static final String CLIENT_SECRET = "";
 	
 	private static final int GRAB_COUNT = 24;
 	private int page_count = 1;
@@ -75,7 +76,6 @@ public class PindService extends Service implements WebComListener{
 		else {
 			request(Constants.POPULAR);
 		}
-		checkIn(prefs.getEmail());
 	}
 	
     public void cleanSD(){
@@ -151,7 +151,7 @@ public class PindService extends Service implements WebComListener{
 
 	public void postLogin(String email, String pass){
 		if (Constants.DEBUG){Log.d(TAG,"postLogin called");}
-		String url = "https://api.pinterest.com/v2/oauth/access_token?client_id=1234567&client_secret=ab04920a718c1e35ae5b08ffa4603dd62ef7c8fc";
+		String url = "https://api.pinterest.com/v2/oauth/access_token?client_id=" + CLIENT_ID + "&client_secret=" + CLIENT_SECRET;
 		WebModel wm = new WebModel(url, this, POST_LOGIN);
     	wm.setContentType("application/x-www-form-urlencoded");
     	wm.setRequestType(WebModel.POST_AUTH);
@@ -169,25 +169,12 @@ public class PindService extends Service implements WebComListener{
     	wm.addParameter("redirect_uri","http://pinterest.com/about/iphone");
     	
     	wm.interact();
-    	
-   		checkIn(email);
 	}
 	public void updateCategory(int category){
 		if (category != curCategory){
 			page_count = 1;
 		}
 		curCategory = category;
-	}
-	
-	private void checkIn(String email){
-		if (!Constants.BETA){
-			return;
-		}	
-		if (Constants.DEBUG){Log.d(TAG,"checkIn called");}
-		String url = "http://pind.feigdev.com:6591/check_email?email=" + email;
-		WebModel wm = new WebModel(url, this, CHECKIN);
-    	wm.setRequestType(WebModel.GET);
-    	wm.interact();
 	}
 	
 	public void likePin(String spi, boolean likeIt){
