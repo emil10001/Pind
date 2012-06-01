@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center_horizontal" 
+    android:background="@drawable/texturetastic_gray">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" 
+        android:layout_gravity="center_horizontal" android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:orientation="vertical" 
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/create_pin_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine" 
+                android:text="">
+
+                <requestFocus />
+            </EditText>
+
+            <Spinner
+                android:id="@+id/pin_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/pin_image_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pin" />
+
+                <Button
+                    android:id="@+id/pin_image_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cancel" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pin_image_preview"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:src="@drawable/pind" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

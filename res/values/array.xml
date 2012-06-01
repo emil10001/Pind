@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="locations">
+        <item>Following</item>
+        <item>Everything</item>
+        <item>Video</item>
+        <item>Popular</item>
+        <item>Gifts</item>
+    </string-array>
+    
+    <string-array name="categories">
+        <item>popular</item>
+        <item>following</item>
+        <item>all</item>
+        <item>architecture</item>
+        <item>art</item>
+        <item>cars_motorcycles</item>
+        <item>design</item>
+        <item>diy_crafts</item>
+        <item>education</item>
+        <item>film_music_books</item>
+        <item>fitness</item>
+        <item>food_drink</item>
+        <item>gardening</item>
+        <item>geek</item>
+        <item>gifts</item>
+        <item>hair_beauty</item>
+        <item>history</item>
+        <item>holidays</item>
+        <item>home</item>
+        <item>humor</item>
+        <item>kids</item>
+        <item>mylife</item>
+        <item>women_apparel</item>
+        <item>men_apparel</item>
+        <item>outdoors</item>
+        <item>people</item>
+        <item>pets</item>
+        <item>photography</item>
+        <item>sports</item>
+        <item>technology</item>
+        <item>travel_places</item>
+        <item>wedding_events</item>
+        <item>other</item>
+    </string-array>
+</resources>

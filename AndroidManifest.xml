@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.feigdev.pind"
+    android:versionCode="3"
+    android:versionName="1.7" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="13"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-feature android:name="android.hardware.camera"/>  
+	
+    <application
+        android:icon="@drawable/pind_icon"
+        android:label="@string/app_name" >
+    	<activity
+            android:name="com.feigdev.pind.PindActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Sherlock.Light"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+	        <intent-filter>
+                <action android:name="com.feigdev.pind.PindActivity" />
+				<category android:name="com.feigdev.pind_pro.PindPro" />
+            </intent-filter>
+            <intent-filter>
+	            <action android:name="android.intent.action.SEND" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <data android:mimeType="image/*" />
+         	</intent-filter>
+         	<intent-filter>
+	            <action android:name="android.intent.action.SEND" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <data android:mimeType="text/plain" />
+         	</intent-filter>
+        </activity>
+         <service  android:name="com.feigdev.pind.PindService"  
+            android:enabled="true" >
+         	<intent-filter>
+                <action android:name="com.feigdev.pind.PindService" />
+				<category android:name="com.feigdev.pind.PindActivity" />
+            </intent-filter>
+	    </service>
+    </application>
+
+</manifest>

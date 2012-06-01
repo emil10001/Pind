@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/greet_main"
+        android:layout_width="150dip"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        class="com.feigdev.pind.GreetingFragment"></fragment>
+
+    <fragment
+        android:id="@+id/grid_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.feigdev.pind.GridFragment">
+    </fragment>
+    
+    <fragment
+        android:id="@+id/details_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.feigdev.pind.DetailsFragment" >
+    </fragment>
+
+</LinearLayout>

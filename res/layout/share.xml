@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:background="#FFFFFFFF">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="5dp" android:gravity="left|center_vertical" android:layout_marginLeft="30dp">
+
+        <CheckBox
+            android:id="@+id/fb_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share with Facebook?" android:textColor="#FF000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="left|center_vertical" android:padding="5dp" android:layout_marginLeft="30dp">
+
+        <CheckBox
+            android:id="@+id/tw_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share with Twitter?" android:textColor="#FF000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center_horizontal" android:paddingLeft="100dp" android:paddingRight="100dp" android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/ok_share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok" android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+</LinearLayout>

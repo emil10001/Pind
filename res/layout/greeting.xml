@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/greet_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FEIG DEV, INC."
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textStyle="bold" 
+        android:typeface="monospace" 
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thank you for purchasing the pro version"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:typeface="monospace" 
+        android:layout_gravity="center" 
+        android:layout_marginLeft="20dp" 
+        android:layout_marginRight="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tiny_robot" />
+
+</LinearLayout>

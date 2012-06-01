@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item android:id="@+id/menu_refresh"
+        android:title="@string/menu_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="0"
+        android:showAsAction="always" />
+    
+    <item android:id="@+id/menu_search"
+        android:title="@string/menu_search"
+        android:icon="@drawable/ic_menu_search"
+        android:orderInCategory="1"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/menu_categories"
+        android:title="@string/menu_category"
+        android:icon="@drawable/ic_menu_category"
+        android:orderInCategory="2"
+        android:showAsAction="always" >
+        <menu>
+        <item android:id="@+id/menu_category_popular" android:title="@string/popular" />
+        <item android:id="@+id/menu_category_following" android:title="@string/following" />
+        <item android:id="@+id/menu_category_all" android:title="@string/all" />
+        <item android:id="@+id/menu_category_architecture" android:title="@string/architecture" />
+        <item android:id="@+id/menu_category_art" android:title="@string/art" />
+        <item android:id="@+id/menu_category_cars_motorcycles" android:title="@string/cars_motorcycles" />
+        <item android:id="@+id/menu_category_design" android:title="@string/design" />
+        <item android:id="@+id/menu_category_diy_crafts" android:title="@string/diy_crafts" />
+        <item android:id="@+id/menu_category_education" android:title="@string/education" />
+        <item android:id="@+id/menu_category_film_music_books" android:title="@string/film_music_books" />
+        <item android:id="@+id/menu_category_fitness" android:title="@string/fitness" />
+        <item android:id="@+id/menu_category_food_drink" android:title="@string/food_drink" />
+        <item android:id="@+id/menu_category_gardening" android:title="@string/gardening" />
+        <item android:id="@+id/menu_category_geek" android:title="@string/geek" />
+        <item android:id="@+id/menu_category_hair_beauty" android:title="@string/hair_beauty" />
+        <item android:id="@+id/menu_category_history" android:title="@string/history" />
+        <item android:id="@+id/menu_category_holidays" android:title="@string/holidays" />
+        <item android:id="@+id/menu_category_home" android:title="@string/home" />
+        <item android:id="@+id/menu_category_humor" android:title="@string/humor" />
+        <item android:id="@+id/menu_category_kids" android:title="@string/kids" />
+        <item android:id="@+id/menu_category_mylife" android:title="@string/mylife" />
+        <item android:id="@+id/menu_category_women_apparel" android:title="@string/women_apparel" />
+        <item android:id="@+id/menu_category_men_apparel" android:title="@string/men_apparel" />
+        <item android:id="@+id/menu_category_outdoors" android:title="@string/outdoors" />
+        <item android:id="@+id/menu_category_people" android:title="@string/people" />
+        <item android:id="@+id/menu_category_pets" android:title="@string/pets" />
+        <item android:id="@+id/menu_category_photography" android:title="@string/photography" />
+        <item android:id="@+id/menu_category_sports" android:title="@string/sports" />
+        <item android:id="@+id/menu_category_technology" android:title="@string/technology" />
+        <item android:id="@+id/menu_category_travel_places" android:title="@string/travel_places" />
+        <item android:id="@+id/menu_category_wedding_events" android:title="@string/wedding_events" />
+        <item android:id="@+id/menu_category_other" android:title="@string/other" />
+        </menu>
+    </item>
+    
+    <item android:id="@+id/menu_login"
+        android:title="@string/menu_login"
+        android:icon="@drawable/ic_menu_login"
+        android:orderInCategory="3"
+        android:showAsAction="never" />
+    
+    <item android:id="@+id/menu_logout"
+        android:title="@string/menu_logout"
+        android:icon="@drawable/ic_menu_login"
+        android:orderInCategory="4"
+        android:showAsAction="never" />
+    
+    <item android:id="@+id/menu_sharing"
+        android:title="@string/menu_sharing"
+        android:icon="@drawable/ic_menu_share"
+        android:orderInCategory="5"
+        android:showAsAction="never" />
+    
+    <item android:id="@+id/menu_camera"
+        android:title="@string/menu_camera"
+        android:icon="@drawable/ic_menu_camera"
+        android:orderInCategory="6"
+        android:showAsAction="ifRoom"/>
+    
+    <item android:id="@+id/menu_gallery"
+        android:title="@string/menu_gallery"
+        android:icon="@drawable/ic_menu_gallery"
+        android:orderInCategory="7"
+        android:showAsAction="ifRoom"/>
+</menu>

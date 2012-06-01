@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center_horizontal" android:padding="10dp"
+    android:background="@drawable/texturetastic_gray">
+
+    
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="@string/email"
+        android:imeOptions="actionNext"
+		android:singleLine="true"
+		android:selectAllOnFocus="true"  >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" 
+        android:text="blah blah blah"
+        android:singleLine="true"
+        android:selectAllOnFocus="true">
+        <requestFocus />
+        
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login" 
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/cancel_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTICE: Facebook and Twitter authentication DOES NOT WORK with this app yet. Please see the directions in the description of this app in the market on how to log in."
+        android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="#282828"/>
+
+</LinearLayout>

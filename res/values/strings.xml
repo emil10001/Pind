@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Pin\'d!</string>
+    <string name="app_name">Pin\'d Pro</string>
+    <string name="menu_refresh">Refresh</string>
+	<string name="menu_search">Search</string>
+	<string name="search">Search</string>
+	<string name="menu_get_next">Next Page</string>
+	<string name="menu_category">Categories</string>
+	<string name="gift_price">Gift price range</string>
+	<string name="ok">Ok</string>
+	<string name="login">Login</string>
+	<string name="cancel">Cancel</string>
+	<string name="email">email@example.com</string>
+	<string name="menu_login">Login</string>
+	<string name="menu_logout">Logout</string>
+	<string name="menu_sharing">FB/Twitter sharing</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="on">On</string>
+	<string name="off">Off</string>
+	<string name="fb_share">Share with Facebook?</string>
+	<string name="twitter_share">Share with Twitter?</string>
+	<string name="send">Send</string>
+	<string name="comment">Comment</string>
+	<string name="pin">Pin</string>
+	<string name="popular">popular</string>
+	<string name="following">following</string>
+	<string name="prev">Previous</string>
+	<string name="next">Next</string>
+		
+	<string name="menu_gallery">Gallery</string>
+	<string name="menu_camera">Camera</string>
+	<string name="pinitem_button">Open in Pinterest</string>
+    <string name="all">all</string>
+	<string name="architecture">architecture</string>
+    <string name="art">art</string>
+    <string name="cars_motorcycles">cars_motorcycles</string>
+    <string name="design">design</string>
+    <string name="diy_crafts">diy_crafts</string>
+    <string name="education">education</string>
+    <string name="film_music_books">film_music_books</string>
+    <string name="fitness">fitness</string>
+    <string name="food_drink">food_drink</string>
+    <string name="gardening">gardening</string>
+    <string name="geek">geek</string>
+    <string name="hair_beauty">hair_beauty</string>
+    <string name="history">history</string>
+    <string name="holidays">holidays</string>
+    <string name="home">home</string>
+    <string name="humor">humor</string>
+    <string name="kids">kids</string>
+    <string name="mylife">mylife</string>
+    <string name="women_apparel">women_apparel</string>
+    <string name="men_apparel">men_apparel</string>
+    <string name="outdoors">outdoors</string>
+    <string name="people">people</string>
+    <string name="pets">pets</string>
+    <string name="photography">photography</string>
+    <string name="sports">sports</string>
+    <string name="technology">technology</string>
+    <string name="travel_places">travel_places</string>
+    <string name="wedding_events">wedding_events</string>
+    <string name="other">other</string>
+    
+     <!-- License checking status messages -->
+    <string name="check_license">Check license</string>
+    <string name="checking_license">Checking license...</string>
+    <string name="dont_allow">Don\'t allow the user access</string>
+    <string name="allow">Allow the user access</string>
+    <string name="application_error">Application error: %1$s</string>
+
+    <!-- Unlicensed dialog messages -->
+    <string name="unlicensed_dialog_title">Application not licensed</string>
+    <string name="unlicensed_dialog_body">This application is not licensed. Please purchase it from Android Market.</string>
+    <string name="buy_button">Buy app</string>
+    <string name="quit_button">Exit</string>
+</resources>
