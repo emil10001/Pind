@@ -23,3 +23,5 @@ Screenshots:
 <img src="http://files.feigdev.com/pind_7_menu.png" alt="Pin'd screenshot 7" width="220px" /> _ 
 <img src="http://files.feigdev.com/pind_8_gallery.png" alt="Pin'd screenshot 8"  width="220px" /> _ 
 <img src="http://files.feigdev.com/pind_9_create_pin.png" alt="Pin'd screenshot 9"  width="220px" /> 
+
+By <a href="https://plus.google.com/u/0/110693175237378228684?rel=author">E John Feig</a>
